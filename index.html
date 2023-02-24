@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         
-    <title>Document</title>
+    <title>Vonne landing page</title>
 </head>
 <style>
 
@@ -24,14 +24,44 @@
     /*background-color: rgba(85, 78, 43, 0); */
     background-color: whitesmoke;
     }
+    .logo{
+        height: 50px; 
+        width: 100px; 
+        margin-left: 20px;
+    }
     
     #content1{
         padding: 300px 0px 0px 0px;
     }
 
+    .me{
+        background-color: green;
+        border-radius: 15px;
+        width: 80px;
+        text-align: center;
+    }
+
+    .cardbody{
+            height: 300px;
+        }
+    
+
     @media only screen and (max-width: 600px) {
-        .login{
-            padding-left: 40%;
+        
+
+        .me{
+            text-align: left;
+            background-color: rgba(0, 0, 255, 0);
+        }
+
+        .logo{
+            height: 50px; 
+            width: 80px; 
+            margin-left: 20px;
+        }
+
+        .cardbody{
+            height: auto;
         }
     }
 
@@ -41,8 +71,7 @@
         <div class="conteiner-fluid px-5 py-4">
             <nav class="navbar navbar-expand-lg  navbar-dark text-success" style="border-radius: 15px; background-color: rgb(223, 223, 17); ">
                 <div id="navigation" class="container-fluid ">
-                    <img src="shoes.png" alt="shoe logo" style="height: 60px; width: 80px; margin-left: 20px;">
-                    <!--<a  href="#"  class="navbar-brand" style="font-size: 38px; color:white;">Vonne</a>-->
+                    <img src="shoes.png" class="logo" alt="shoe logo" >
 
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -54,10 +83,9 @@
                             <a href="#" class="nav-item nav-link " style="color: white;">About</a>
                             <a href="#" class="nav-item nav-link " style="color: white;">Contact</a>
                         </div>
-                        <div class="navbar-nav ms-auto login">
-                            <a href="#" class="nav-item nav-link " style="color: white;">Register</a>
-                            <!--<a href="#" class="nav-item nav-link " style="color: white;">Login</a>-->
-                            <button type="button" class="btn btn-primary">Login</button>
+                        <div class="navbar-nav ms-auto px-5">
+                            <button type="button" class="btn btn-outline-primary mx-2 my-2">Register</button>
+                            <button type="button" class="btn btn-primary mx-2 my-2">Login</button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +94,7 @@
                 <div id="description1" class="col-md-4 "><!--border border-warning-->
                     <h1>PICK THE PERFECT PAIR</h1>
                     <p>
-                        Bootstrap grid system provides an easy and powerful way to create responsive layouts of all shapes and sizes. It is built with flexbox with mobile-first approach.
+                        Welcome to our basketball shoe shop! We offer a wide variety of high-performance basketball shoes from the world's leading brands.
                     </p>
                     <button id="button1" type="button" class="btn btn-primary bg-info text-white m-2 " style="border-radius: 20px; height: 60px; width: 160px;"><h5><b>SHOP NOW</b></h5></button>
                 </div>
@@ -74,85 +102,84 @@
     </section>
 
     <section class="section2">
-      <div class="container">
-        <div id="container4"class="containter "><!--border border-danger-->
-            <h1 class="text-center text-success">Skills</h1>
-            
-            <div id="container2" class="container row px-5 ">
-                <div class="container row "><!--border border-danger-->
-                  <div class="col-sm-4 " ><!--border border-danger-->
+        <div class="container">
+            <div id="container4"class="containter "><!--border border-danger-->
+                
+                <div id="container2" class="container row " style="padding : 100px 0px 100px 0px;">
+                    <div class="container row "><!--border border-danger-->
+                    <div class="col-sm-4 " ><!--border border-danger-->
+                        <div class="card my-5" >
+                            <img src="Black-blue.png" style="height: 200px;"  class="card-img-top " alt="...">
+                            <div class="card-body text-center text-dark bg-light cardbody" >
+                                <h5 class="card-title"><b>Nike KD V</b> </h5>
+                                <h5>The fifth signature shoe of Kevin Durant, the Nike KD V was introduced as a mid-cut, higher than his previous model, the Zoom KD IV, and minus the mid-foot strap. </h5>
+                                <button type="button" class="btn btn-primary" style="margin-top: 40px; height: 50px; width: 200px; font-size: 20px;">Order now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 " ><!--border border-danger-->
                     <div class="card my-5" >
-                        <img src="Black-blue.png" style="height: 200px;"  class="card-img-top " alt="...">
-                        <div class="card-body text-center text-dark bg-light" style="height: 300px;">
-                            <h5 class="card-title"><b>Photo Editing</b> </h5>
-                            <h5>Photo editing is the art of enhancing, retouching, and manipulating images to achieve a desired aesthetic or message</h5>
+                        <img src="Nike-running-shoes.png" style="height: 200px;"  class="card-img-top " alt="...">
+                        <div class="card-body text-center text-dark bg-light cardbody" >
+                            <h5 class="card-title"><b>Nike Air Max Plus</b> </h5>
+                            <h5>This Nike Air Max Plus version features a light blue and white gradient mesh upper, paired with a translucent TPU cage, clear plastic toecap, and white leather mudguards and heels.</h5>
                             <button type="button" class="btn btn-primary" style="margin-top: 40px; height: 50px; width: 200px; font-size: 20px;">Order now</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 " ><!--border border-danger-->
-                  <div class="card my-5" >
-                      <img src="Nike-running-shoes.png" style="height: 200px;"  class="card-img-top " alt="...">
-                      <div class="card-body text-center text-dark bg-light" style="height: 300px;">
-                          <h5 class="card-title"><b>Video Editing</b> </h5>
-                          <h5>Work with raw footage, adding sound effects, music, and transitions to create a seamless and polished final product.</h5>
-                          <button type="button" class="btn btn-primary" style="margin-top: 40px; height: 50px; width: 200px; font-size: 20px;">Order now</button>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-sm-4 " ><!--border border-danger-->
-                <div class="card my-5" >
-                    <img src="Nike-Trainer.png" style="height: 200px;"  class="card-img-top " alt="...">
-                    <div class="card-body text-center text-dark bg-light" style="height: 300px;">
-                        <h5 class="card-title"><b>Coding</b> </h5>
-                        <h5>The ability to review and modify code written in programming languages to ensure it is accurate, efficient, and follows coding standards.</h5>
-                        <button type="button" class="btn btn-primary" style="margin-top: 20px; height: 50px; width: 200px; font-size: 20px;">Order now</button>
+                    <div class="card my-5" >
+                        <img src="Nike-Trainer.png" style="height: 200px;"  class="card-img-top " alt="...">
+                        <div class="card-body text-center text-dark bg-light cardbody">
+                            <h5 class="card-title"><b>Alpha Huarache Elite 3 Low Premium</b> </h5>
+                            <h5>Dominate any position on the field in the Nike Alpha Huarache Elite 3 Low Premium, with its sneaker-like feel and versatile performance.</h5>
+                            <button type="button" class="btn btn-primary" style="margin-top: 70px; height: 50px; width: 200px; font-size: 20px;">Order now</button>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
             </div>
-          </div>
-        </div>
     </section>
 
     <!-- Footer -->
 <footer class="text-center text-lg-start text-muted" style="background-color: rgba(0, 0, 0, 0.24);">
     <!-- Section: Social media -->
     <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div class="px-5">
-          <!-- Facebook -->
-            <i class="fab fa-facebook-f" style="margin: 0px 10px 0px 10px;"></i>
-      <!-- Twitter -->
-            <i class="fab fa-twitter" style="margin: 0px 10px 0px 10px;"></i>
-      <!-- Google -->
-            <i class="fab fa-google" style="margin: 0px 10px 0px 10px;"></i>
-      <!-- Instagram -->
-            <i class="fab fa-instagram" style="margin: 0px 10px 0px 10px;"></i>
-      <!-- Linkedin -->
-          <i class="fab fa-linkedin-in" style="margin: 0px 10px 0px 10px;"></i>
-      <!-- Github -->
-          <i class="fab fa-github" style="margin: 0px 10px 0px 10px;"></i>
-
-
-    </div>
-      <!-- Right -->
-    </div>
-    <!-- Section: Social media -->
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
     
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.144);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold text" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+        <!-- Right -->
+        <div class="px-5">
+            <!-- Facebook -->
+                <i class="fab fa-facebook-f" style="margin: 0px 10px 0px 10px;"></i>
+        <!-- Twitter -->
+                <i class="fab fa-twitter" style="margin: 0px 10px 0px 10px;"></i>
+        <!-- Google -->
+                <i class="fab fa-google" style="margin: 0px 10px 0px 10px;"></i>
+        <!-- Instagram -->
+                <i class="fab fa-instagram" style="margin: 0px 10px 0px 10px;"></i>
+        <!-- Linkedin -->
+            <i class="fab fa-linkedin-in" style="margin: 0px 10px 0px 10px;"></i>
+        <!-- Github -->
+            <i class="fab fa-github" style="margin: 0px 10px 0px 10px;"></i>
+
+
+        </div>
+        <!-- Right -->
+        </div>
+        <!-- Section: Social media -->
+        
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.144);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold text" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 </body>
 </html>
